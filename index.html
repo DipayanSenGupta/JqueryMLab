@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+	<title>MongoLan Data API</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src ="js/main.js"></script>
+	<title></title>
+</head>
+<body onload="getBooks()">
+
+	<div class="container">
+		<h3>Add New Book</h3>		
+		<form id ="add-book">
+			<div class="form-group">
+				<label>Book Title</label>
+				<input type="text" id="title" class="form-control" name="">
+			</div>
+
+			<div class="form-group">
+				<label>Category</label>
+				<input type="text" id="category" class="form-control" name="">
+			</div>
+			<div class="form-group">
+				<label>Excerpt</label>
+				<input type="text" id="excerpt" class="form-control" name="">
+			</div>
+			<input type="submit" name="submit" value="add book" class="btn btn-primary">
+		</form>
+		<hr/>
+		<div class="row">
+			<div id="books"></div>
+		</div>
+	</div>
+
+</body>
+</html>
